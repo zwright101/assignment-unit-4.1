@@ -1,6 +1,6 @@
-# Tier 1 Week 4 - Part 1
+# Unit 4, Part 1: Function Practice
 
-This week we'll be pulling together all of the Javascript techniques you've learned thus far as well as practicing with HTML & CSS.
+This unit we'll be pulling together all of the Javascript techniques you've learned thus far as well as practicing with HTML & CSS.
 
 ## Topics Covered
 
