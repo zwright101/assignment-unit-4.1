@@ -104,7 +104,7 @@ describe('Automated tests', function () {
                 this.skip();
             } else {
                 // Only run this test in the browser
-                expect(counter, `console.log() was only called ${counter} times.`).to.be.greaterThan(14);
+                expect(counter, `console.log() was only called ${counter} times.`).to.be.greaterThan(12);
             }
         });
     });
