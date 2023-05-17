@@ -26,7 +26,7 @@ if (typeof window === 'object') {
     // Run tests in Node.js
     assert = require('assert');
     expect = require('chai').expect;
-    testItems = require('../assignment/scripts/cart.js');
+    testItems = require('../assignment/scripts/function-practice.js');
 }
 
 /**
@@ -99,7 +99,7 @@ describe('Automated tests', function () {
     });
     describe(`Functions are tested using console.log()`, function () {
         it(`Functions are tested using console.log()`, function () {
-            if (counter === undefined) {
+            if (typeof counter === 'undefined') {
                 // Skip this test if running on the server
                 this.skip();
             } else {
