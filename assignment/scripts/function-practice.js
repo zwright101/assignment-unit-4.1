@@ -32,19 +32,27 @@ function addNumbers(){
 addNumbers();
 
 // 4. Function to multiply three numbers & return the result
+let numOne = 2;
+let numTwo = 3;
+let numThree = 4;
+let numTotal = numOne * numTwo * numThree;
 function multiplyThree() {
-
+  return numTotal;
 }
-
+multiplyThree();
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
+let number = 0;
 function isPositive(number) {
-  if (number > 0) {
-    return;
+  if (number >= 0) {
+    return true;
+  } else {
+    return false;
   }
-  return;
 }
+isPositive(number); 
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log('isPositive - should say true', isPositive(3));
@@ -58,6 +66,7 @@ function getLast(array) {
   return array[array.length - 1];
 }
 console.log('last item in array' , getLast);
+
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
