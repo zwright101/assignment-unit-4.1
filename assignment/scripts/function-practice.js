@@ -22,28 +22,42 @@ function helloName(name) {
 helloName()
 
 // 3. Function to add two numbers together & return the result
-let firstNumber = 4;
-let secondNumber = 5;
-let sumOfNumbers = firstNumber + secondNumber
-function addNumbers(){
-  return sumOfNumbers;
-  // return firstNumber + secondNumber;
-}  
-addNumbers();
+// let firstNumber = 4;
+// let secondNumber = 5;
+// let sumOfNumbers = firstNumber + secondNumber
+// function addNumbers(){
+//   return sumOfNumbers;
+//   // return firstNumber + secondNumber;
+// }  
+// addNumbers();
+
+function addNumbers(firstNumber, secondNumber){
+  return firstNumber + secondNumber;
+}
+console.log('4 + 8 =', addNumbers(4, 8));
+console.log('10 + 5 =', addNumbers(10, 5));
+console.log('22 + 22 =', addNumbers(22, 22));
 
 // 4. Function to multiply three numbers & return the result
-let numOne = 2;
-let numTwo = 3;
-let numThree = 4;
-let numTotal = numOne * numTwo * numThree;
-function multiplyThree() {
-  return numTotal;
+// let numOne = 2;
+// let numTwo = 3;
+// let numThree = 4;
+// let numTotal = numOne * numTwo * numThree;
+// function multiplyThree() {
+//   return numTotal;
+// }
+// multiplyThree();
+
+function multiplyThree(number1, number2, number3){
+  return number1 * number2 * number3;
 }
-multiplyThree();
+console.log('2 * 8 * 3 =', multiplyThree(2, 8, 3));
+console.log('5 * 5 * 5 =', multiplyThree(5, 5, 5));
+console.log('10 * 2 * 8 =', multiplyThree(10, 2, 8));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
-let number = 0;
+// let number = 0;
 function isPositive(number) {
   if (number >= 0) {
     return true;
@@ -51,33 +65,44 @@ function isPositive(number) {
     return false;
   }
 }
-isPositive(number); 
+console.log('isPositive - should say true', isPositive(22));
+console.log('isPositive - should say false', isPositive(-9));
+console.log('isPositive - should say false', isPositive(-3));
+// isPositive(number); 
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-console.log('isPositive - should say true', isPositive(3));
-console.log('isPositive - should say false', isPositive(0));
-console.log('isPositive - should say false', isPositive(-3));
+
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-  return array[array.length - 1];
+  return array[array.length - 1]
 }
-console.log('last item in array' , getLast);
+console.log('last item in array is:' , getLast([5, 11, -2]));
+console.log('last item in array is:' , getLast(["Foo Fighters", "Electric Callboy", "Linkin Park"]));
+console.log('last item in array should be undefined:' , getLast([]));
+
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-  for (i = 0; i <= array.length; i++){
-    if (value === array [i]){
-      return true;
-    }
-  }
-
+  for (let i = 0; i < array.length; i++) {
+   if (array[i] === value) {
+     return true;
+   }
+ }
+ return false;
 }
+
+console.log("Value Found:", find(5, [3, 5, -2, 9, 0])); // should return true
+console.log("Value Found:", find('a', ['e', 'g', 'a', 'p', 'l'])); // should return true
+console.log("Value Found:", find(2, [1, 3, 5, 7, 9])); // should return false
+
+
 
 // ----------------------
 // Stretch Goals
